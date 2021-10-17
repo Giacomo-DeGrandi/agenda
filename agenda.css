@@ -1,3 +1,377 @@
-body { 
-	background-color: #F1F0EA
+:root { 
+	--darkpurple: #160F29 ;
+	--white: #FDFDFF;
+	--maxbluepurp: #B8B8F3;
+	--lilac: #BD93BD;
+	--starblue: #6A4CBD ;
+	--starbluergb: rgba( 106, 76, 189, 0.3) ;
+	--midgray: #93867F;
+	--lato:'Lato', sans-serif;
+	--fontcolW: whitesmoke;
+	--fontcolB: black;
+	--isableshad: #CFBDB4;
+	--fonsiz: 16px;
+	--mainshad: rgba(170, 120, 160, 0.75) 0px 48px 100px 0px;
+	--onwhiteshad: rgba(25,25,25,.04) 0 0 1px 0,
+				rgba(0,0,0,.1) 0 3px 4px 0;
+	--schoolcol: #3BB273 ;
+	--workcol: #4D9DE0;
+	--sportcol: #E1BC29;
+	--entertcol: #E15554;
+
+}
+
+body {
+	margin: 0px;
+	background-color: var(--white);
+}
+
+
+header {
+	width: 100%;
+	background-color: var(--white);
+	height: 50px ;
+	display: flex;
+} 
+
+.lighter {
+	font-weight: 500 ;
+}
+
+#legend { 	font-family: var(--lato);
+	color: var(--fontcolB);
+	font-weight: 300 ;
+	font-size:var(--fonsiz);
+	padding: 25px;
+}
+
+#legend:hover {
+
+}
+
+main {display: flex;
+}
+
+#appointments:checked ~ #modal {
+			display: none;
+}
+
+#labap {
+	font-family: var(--lato);
+	color: var(--fontcolW);
+	font-weight: 900 ;
+	font-size:var(--fonsiz);
+	background-color: var(--starblue);
+	height: 24px;
+	width: 150px;
+	border-radius: 30px;
+	box-shadow: var(--onwhiteshad);
+	padding: 3px;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+
+[name=sect1]:active, [name=sect1]:checked:active {
+	background-color: var(--maxbluepurp);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.3);
+}
+
+#labap:active, #labap:checked:active {
+	background-color: var(--maxbluepurp);
+	box-shadow: 0 1px 2px rgba(255,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+
+#appointments {				
+	appearance: none;
+}
+
+#modal {
+	display: hidden;
+	background-color: var(--white);
+	font-family: var(--lato);
+	color: var(--fontcolB);
+	font-weight: 900 ;
+	font-size:var(--fonsiz);
+	border-radius: 30px;
+	box-shadow: var(--onwhiteshad);
+	padding: 9px;
+	margin-top: 10px;
+	border: solid 0.02px lightgray;
+
+}
+
+
+#general:checked ~ #settab0 {
+	display: none;
+}
+
+#school:checked ~ #settab1 {
+	display: none;
+}
+
+#work:checked ~ #settab2 {
+	display: none;
+}
+
+#sport:checked ~ #settab3 {
+	display: none;
+}
+
+#entert:checked ~ #settab4 {
+	display: none;
+}
+
+#general:checked ~ #settabx1 {
+	display: none;
+}
+
+#school:checked ~ #settabx2 {
+	display: none;
+}
+
+#work:checked ~ #settabx3 {
+	display: none;
+}
+
+#sport:checked ~ #settabx4 {
+	display: none;
+}
+
+#entert:checked ~ #settabx5 {
+	display: none;
+}
+
+.todotext {
+		box-shadow: var(--onwhiteshad);
+		font-family: var(--lato);
+		color: var(--fontcolB);
+		font-weight: 900 ;
+		font-size:var(--fonsiz);
+
+}
+
+label[for=school]{
+	background-color: var(--schoolcol);
+}
+
+label[for=work]{
+	background-color: var(--workcol);
+}
+
+label[for=sport]{
+	background-color: var(--sportcol);
+}
+
+label[for=entert]{
+	background-color: var(--entertcol);
+}
+
+
+
+
+#school {
+	appearance: none;
+
+}
+
+#work {
+	appearance: none;
+}
+
+#sport {
+	appearance: none;
+}
+
+#entert {
+	appearance: none;
+}
+
+#general {
+	appearance: none;
+}
+
+
+.formbtn {
+	font-family: var(--lato);
+	color: var(--fontcolW);
+	font-weight: 900 ;
+	font-size:var(--fonsiz);
+	background-color: var(--starblue);
+	border-radius: 30px;
+	box-shadow: var(--onwhiteshad);
+	padding: 3px;
+	white-space: nowrap;
+}
+
+table {
+	font-family: var(--lato);
+	color: var(--fontcolB);
+	font-weight: 900 ;
+	font-size:var(--fonsiz);
+	background-color: var(--white);
+	border-radius: 30px;
+	float: right;
+	box-shadow: var(--onwhiteshad);
+	border: solid 0.02px lightgray;
+
+}
+
+#generalpointer {
+	background-color: var(--starblue);
+	height: 15px;
+ 	width: 15px;
+  	border-radius: 50%;
+  	display: inline-block;
+}
+
+
+#schoolpointer {
+	background-color: var(--schoolcol);
+	height: 15px;
+ 	width: 15px;
+  	border-radius: 50%;
+  	display: inline-block;
+}
+
+#workpointer{
+	background-color: var(--workcol);
+	height: 15px;
+ 	width: 15px;
+  	border-radius: 50%;
+  	display: inline-block;
+}
+
+#sportpointer{
+	background-color: var(--sportcol);
+	height: 15px;
+ 	width: 15px;
+  	border-radius: 50%;
+  	display: inline-block;
+}
+
+#entertpointer {
+	background-color: var(--entertcol);
+	height: 15px;
+ 	width: 15px;
+  	border-radius: 50%;
+  	display: inline-block ;
+}
+
+
+td table td {
+	padding: 10px;
+	width: 50px;
+}
+
+td:hover {
+	background-color: var(--starbluergb);
+	color: var(--fontcolW);
+	border-radius: 30px;
+}
+
+.weekday {
+	font-size: 24px;
+	width: 130px;
+	padding: 15px;
+}
+
+
+.backdiv {
+		display: flex;
+		flex-direction:column;
+		background-color: var(--white);
+		float: left;
+		margin-right: 50px;  
+		margin-left: 50px;
+		border-radius: 30px;
+		box-shadow: var(--onwhiteshad);
+		border: solid 0.02px lightgray;
+		widht: 100%;
+		margin-top: 5px;
+}
+
+
+#showform {
+	float: right;
+	font-family: var(--lato);
+	color: var(--starblue);
+	font-weight: 900 ;
+	font-size:18px;
+	background-color: var(--white);
+	box-shadow: var(--onwhiteshad);
+	padding: 15px;
+	border-radius: 30px;
+	border: solid 0.02px lightgray;
+}
+
+#date {
+		font-family: var(--lato);
+	color: var(--fontcolB);
+	font-weight: 900 ;
+	font-size:24px;
+	background-color: var(--white);
+	box-shadow: var(--onwhiteshad);
+	padding: 15px;
+	border-radius: 30px;
+	border: solid 0.02px lightgray;
+}
+
+.today {
+	display: flex;
+	flex-direction: column ;
+	font-family: var(--lato);
+	color: var(--fontcolB);
+	font-weight: 900 ;
+	font-size: 32px;
+	background-color: var(--white);
+	border-radius: 30px;
+	box-shadow: var(--onwhiteshad);
+	border: solid 0.02px lightgray;
+	margin-top: 20px;
+	margin-left: 60px;
+	z-index: -1;
+	display: flex;
+	width: 25%;
+}
+
+
+.formbtnday {
+	font-family: var(--lato);
+	color: var(--fontcolB);
+	font-weight: 900 ;
+	font-size:24px;
+	background-color: var(--white);
+	border-radius: 30px;
+	box-shadow: var(--onwhiteshad);
+	padding: 15px;
+	border: solid 0.02px lightgray;
+	cursor: pointer;
+}
+
+#day1 {
+	appearance: none;
+	display: none;
+}
+
+
+#day1:checked ~ #daynote {
+	display: none;
+
+}
+
+
+#daynote {
+	display: hidden;
+	font-family: var(--lato);
+	color: var(--starblue);
+	font-weight: 900 ;
+	font-size:35px;
+	background-color: var(--white);
+	box-shadow: var(--onwhiteshad);
+	border-radius: 15px;
+	text-shadow: 0px 0.2px 0.3px black ;
+	border: solid 0.8px lightgray;
+	width: 700px;
+
 }

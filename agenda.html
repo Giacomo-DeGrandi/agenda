@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Accueil</title>
+<title>Agenda</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="agenda.css">        
@@ -10,5 +10,693 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet"> 
 </head>
 <body>
+		<header>
+			<label for="appointments" id="labap" name="sect1"> &nbsp&nbsp add a 'to do'... &nbsp 📅&nbsp </label>
+			<input type="checkbox" id="appointments" checked>
+				<div id="modal">
+					<label for="setdate" id="setdate" name="sect1"> &nbsp&nbsp set the date &nbsp 📅 &nbsp </label>
+					<input type="date" id="setdate">
+					<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+					<input type="checkbox" id="general" checked>
+						<div id="settab0">
+					 		<textarea class="todotext" cols="80" rows="4"></textarea>
+					 	</div>
+					<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+					<input type="checkbox" id="school" checked>
+						<div id="settab1">
+					 		<textarea class="todotext" cols="80" rows="4"></textarea>
+					 	</div>
+					<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+					<input type="checkbox" id="work" checked>
+						<div id="settab2">
+					 		<textarea class="todotext" cols="80" rows="4"></textarea>
+						</div>
+					<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+					<input type="checkbox" id="sport" checked>
+						<div id="settab3">
+					 		<textarea class="todotext" cols="80" rows="4"></textarea>
+						</div>
+					<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+					<input type="checkbox" id="entert" checked>
+						<div id="settab4">
+					 		<textarea class="todotext" cols="80" rows="4"></textarea>
+						</div>
+				</div>  <!-- modal div -->
+		</header>
+	<main>			
+			<div class="backdiv">
+				<div id="date">
+					<span class="lighter">Date:
+					</span>
+					&nbsp&nbsp2021 Oct 17 &nbsp
+				</div> <!-- date div -->
+				<div id="showform">
+					Today activities: 
+				</div>
+					<table>
+						<tr>
+							<td class="weekday">&nbsp&nbsp&nbsp&nbsp Monday</td>
+							<td class="weekday">&nbsp&nbsp&nbsp&nbsp Tuesday</td>
+							<td class="weekday">&nbsp&nbsp&nbsp&nbsp Wensday</td>
+							<td class="weekday">&nbsp&nbsp&nbsp&nbsp Thursday</td>
+							<td class="weekday">&nbsp&nbsp&nbsp&nbsp Friday</td>
+							<td class="weekday">&nbsp&nbsp&nbsp&nbsp Saturday</td>
+							<td class="weekday">&nbsp&nbsp&nbsp&nbsp Sunday</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="day1" class="formbtnday" name="jour1"> 1 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settabx1">
+													 	<textarea class="todotext" cols="80" rows="4">4pm out with ..</textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settabx2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1">  💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settabx3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1">  ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settabx4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settabx5">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>
+							<td>
+								<label for="day1" class="formbtnday" name="jour1"> 2 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>
+							<td>
+								<label for="day1" class="formbtnday" name="jour1"> 3 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>
+							<td>
+								<label for="day1" class="formbtnday" name="jour1"> 4 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>
+							<td>
+								<label for="day1" class="formbtnday" name="jour1"> 5 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+
+										</table>
+									</div> <!-- daynote div -->
+							</td>
+														<td>
+								<label for="day1" class="formbtnday" name="jour1"> 6 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>
+														<td>
+								<label for="day1" class="formbtnday" name="jour1"> 7 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>		
+						</tr>
+						<tr>
+														<td>
+								<label for="day1" class="formbtnday" name="jour1"> 8 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>
+									<table>	
+											<tr>
+												<label for="day1" class="formbtnday" name="jour1"> 1 </label>
+												<input type="checkbox" id="day1" checked>
+											</tr>
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+						</tr>
+						<tr>
+														<td>
+								<label for="day1" class="formbtnday" name="jour1"> 1 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+						</tr>
+						<tr>
+														<td>
+								<label for="day1" class="formbtnday" name="jour1"> 1 </label>
+								<input type="checkbox" id="day1" checked>
+										<table>	
+											<tr>
+												<td id="schoolpointer"></td>      
+												<td id="workpointer"></td>	
+											</tr>
+											<tr>
+												<td id="sportpointer"></td>
+												<td id="entertpointer"></td>
+											</tr>
+										</table>
+									<div id="daynote">
+										<table class="tableday">
+											<tr>
+											<td>
+												<label for="general" class="formbtn" name="sect1"> &nbsp&nbsp General &nbsp 💡  </label>
+												<input type="checkbox" id="general" checked>
+													<div id="settab0">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="school" class="formbtn" name="sect1"> &nbsp&nbsp School &nbsp 📖  </label>
+												<input type="checkbox" id="school" checked>
+													<div id="settab1">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="work" class="formbtn" name="sect1"> &nbsp&nbsp Work &nbsp 💼  </label>
+												<input type="checkbox" id="work" checked>
+													<div id="settab2">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="sport" class="formbtn" name="sect1"> &nbsp&nbsp Sport &nbsp ⚽  </label>
+												<input type="checkbox" id="sport" checked>
+													<div id="settab3">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+											<td>
+												<label for="entert" class="formbtn" name="sect1"> &nbsp&nbsp Entertainment &nbsp 😺  </label>
+												<input type="checkbox" id="entert" checked>
+													<div id="settab4">
+													 	<textarea class="todotext" cols="80" rows="4"></textarea>
+													</div>
+											</td>
+										</table>
+									</div> <!-- daynote div -->
+							</td>
+							<td>30</td>
+							<td>31</td>
+						</tr>
+					</table>
+				<div>
+			</div> <!-- backdiv div -->
+			<span id="legend">
+						point here to see the legend ✋
+			</span>
+	</main>
 </body>
 </html>
+
