@@ -212,8 +212,7 @@ table {
 	float: right;
 	box-shadow: var(--onwhiteshad);
 	border: solid 0.02px lightgray;
-	width: 100%;
-	height: 330px;
+	height: 500px;
 	text-align: center;
 	table-layout: fixed;
 }
@@ -224,7 +223,6 @@ table {
 	height: 15px;
  	width: 15px;
   	border-radius: 50%;
-  	display: inline-block;
 }
 
 
@@ -233,7 +231,7 @@ table {
 	height: 15px;
  	width: 15px;
   	border-radius: 50%;
-  	display: inline-block;
+
 }
 
 #workpointer{
@@ -241,7 +239,7 @@ table {
 	height: 15px;
  	width: 15px;
   	border-radius: 50%;
-  	display: inline-block;
+
 }
 
 #sportpointer{
@@ -249,7 +247,6 @@ table {
 	height: 15px;
  	width: 15px;
   	border-radius: 50%;
-  	display: inline-block;
 }
 
 #entertpointer {
@@ -257,7 +254,7 @@ table {
 	height: 15px;
  	width: 15px;
   	border-radius: 50%;
-  	display: inline-block ;
+
 }
 
 
@@ -269,7 +266,7 @@ td:hover {
 
 .weekday {
 	font-size: 24px;
-	width: 180px;
+	width: 220px;
 }
 
 
@@ -284,7 +281,7 @@ td:hover {
 		box-shadow: var(--onwhiteshad);
 		border: solid 0.02px lightgray;
 		margin-top: 5px;
-		width: 90%;
+
 }
 
 
@@ -340,11 +337,12 @@ td:hover {
 	background-color: var(--white);
 	border-radius: 30px;
 	box-shadow: var(--onwhiteshad);
-	padding: 12px;
+	padding: 6px;
 	border: solid 0.02px lightgray;
 	cursor: pointer;
 	text-decoration: none;
 	width: 10px;
+	bottom: 2px;
 }
 
 a.btn {
@@ -354,8 +352,6 @@ a.btn {
 
 .calenmodal {
 	visibility: hidden;
-	height: 2px;
-	display: flex;
 }
 
 .calenmodal:target {
@@ -366,15 +362,12 @@ a.btn {
 	font-weight: 900 ;
 	font-size:var(--fonsiz);
 	background-color: var(--white);
-	border-radius: 30px;
 	text-align: left;
 	box-shadow: var(--onwhiteshad);
 	border: solid 0.02px lightgray;
-	padding: 15px;
-	height: 150px;
-	display: inline-block;
 	display: flex;
 	flex-direction: column;
+	margin-right: 180px;
 
 }
 
@@ -386,6 +379,14 @@ a.btn {
 	width: 100%;
 }
 
+.icons {
+	display: flex;
+	z-index: 4;
+	font-size: 18px;
+	justify-content: space-between;
+}
+
 .icons ul {
 	text-align: left;
 }
+
