@@ -262,7 +262,7 @@ table {
 
 
 td:hover {
-	background-color: var(--starbluergb);
+	background-color: var(--midgray);
 	color: var(--fontcolW);
 	border-radius: 30px;
 }
