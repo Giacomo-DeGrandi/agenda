@@ -193,7 +193,8 @@ table {
 	font-size:var(--fonsiz);
 	background-color: var(--white);
 	border-radius: 30px;
-	float: right;
+	padding: 10px;
+	float: left;
 	box-shadow: var(--onwhiteshad);
 	border: solid 0.02px lightgray;
 	text-align: center;
@@ -215,14 +216,6 @@ table {
 	table-layout: fixed;
 }
 
-p {
-	background-color: var(--starblue);
-	border-radius: 30px;
-	float: right;
-	box-shadow: var(--onwhiteshad);
-	border: solid 0.02px lightgray;
-
-}
 
 #generalpointer {
 	background-color: var(--starblue);
@@ -358,11 +351,13 @@ a.btn {
 
 .calenmodal {
 	visibility: hidden;
+	height: 2px;
+	display: flex;
 }
 
 .calenmodal:target {
-  visibility: visible;
-  z-index: 2;
+  	visibility: visible;
+  	z-index: 2;
   	font-family: var(--lato);
 	color: var(--fontcolB);
 	font-weight: 900 ;
@@ -374,36 +369,13 @@ a.btn {
 	border: solid 0.02px lightgray;
 	padding: 15px;
 	height: 150px;
-	white-space: nowrap;
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+
 }
 
 .remember {
 	padding: 5px;
-}
-
-#day1 {
-	appearance: none;
-	display: none;
-}
-
-
-#day1:checked ~ #daynote {
-	display: none;
-
-}
-
-
-#daynote {
-	display: hidden;
-	font-family: var(--lato);
-	color: var(--starblue);
-	font-weight: 900 ;
-	font-size:35px;
-	background-color: var(--white);
-	box-shadow: var(--onwhiteshad);
-	border-radius: 15px;
-	text-shadow: 0px 0.2px 0.3px black ;
-	border: solid 0.8px lightgray;
-
 }
 
