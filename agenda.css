@@ -120,7 +120,7 @@ main {display: flex;
 
 #entert:checked ~ #settab4 {
 	display: none;
-}
+} 
 
 #general:checked ~ #settabx1 {
 	display: none;
