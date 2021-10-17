@@ -214,13 +214,26 @@ table {
 	float: right;
 	box-shadow: var(--onwhiteshad);
 	border: solid 0.02px lightgray;
+}
+
+#calendar {
+		font-family: var(--lato);
+	color: var(--fontcolB);
+	font-weight: 900 ;
+	font-size:var(--fonsiz);
+	background-color: var(--white);
+	border-radius: 30px;
+	float: right;
+	box-shadow: var(--onwhiteshad);
+	border: solid 0.02px lightgray;
+	
 
 }
 
 #generalpointer {
 	background-color: var(--starblue);
-	height: 15px;
- 	width: 15px;
+	height: 8px;
+ 	width: 8px;
   	border-radius: 50%;
   	display: inline-block;
 }
@@ -228,40 +241,39 @@ table {
 
 #schoolpointer {
 	background-color: var(--schoolcol);
-	height: 15px;
- 	width: 15px;
+	height: 8px;
+ 	width: 8px;
   	border-radius: 50%;
   	display: inline-block;
 }
 
 #workpointer{
 	background-color: var(--workcol);
-	height: 15px;
- 	width: 15px;
+	height: 8px;
+ 	width: 8px;
   	border-radius: 50%;
   	display: inline-block;
 }
 
 #sportpointer{
 	background-color: var(--sportcol);
-	height: 15px;
- 	width: 15px;
+	height: 8px;
+ 	width: 8px;
   	border-radius: 50%;
   	display: inline-block;
 }
 
 #entertpointer {
 	background-color: var(--entertcol);
-	height: 15px;
- 	width: 15px;
+	height: 8px;
+ 	width: 8px;
   	border-radius: 50%;
   	display: inline-block ;
 }
 
 
 td table td {
-	padding: 10px;
-	width: 50px;
+	padding: 5px;
 }
 
 td:hover {
@@ -305,6 +317,8 @@ td:hover {
 	border: solid 0.02px lightgray;
 }
 
+
+
 #date {
 		font-family: var(--lato);
 	color: var(--fontcolB);
@@ -344,9 +358,39 @@ td:hover {
 	background-color: var(--white);
 	border-radius: 30px;
 	box-shadow: var(--onwhiteshad);
-	padding: 15px;
+	padding: 12px;
 	border: solid 0.02px lightgray;
 	cursor: pointer;
+	text-decoration: none;
+}
+
+a.btn {
+	text-decoration: none;
+}
+
+
+.calenmodal {
+	visibility: hidden;
+}
+
+.calenmodal:target {
+  visibility: visible;
+  z-index: 100;
+  	font-family: var(--lato);
+	color: var(--fontcolB);
+	font-weight: 900 ;
+	font-size:var(--fonsiz);
+	background-color: var(--white);
+	border-radius: 30px;
+	float: right;
+	box-shadow: var(--onwhiteshad);
+	border: solid 0.02px lightgray;
+	padding: 15px;
+	height: 150px;
+}
+
+.remember {
+	padding: 5px;
 }
 
 #day1 {
@@ -372,6 +416,6 @@ td:hover {
 	border-radius: 15px;
 	text-shadow: 0px 0.2px 0.3px black ;
 	border: solid 0.8px lightgray;
-	width: 700px;
 
 }
+
