@@ -226,7 +226,7 @@ table {
 	float: right;
 	box-shadow: var(--onwhiteshad);
 	border: solid 0.02px lightgray;
-	
+	width: 80%;
 
 }
 
