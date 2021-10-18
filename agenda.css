@@ -367,6 +367,8 @@ a.btn {
 	border: solid 0.02px lightgray;
 	display: flex;
 	flex-direction: column;
+	border-radius: 30px;
+	padding: 10px;
 
 }
 
