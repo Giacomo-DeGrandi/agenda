@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Agenda</title>
+<title>Form</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="agenda.css">        
@@ -13,12 +13,40 @@
 		<header>
 		</header>
 	<main>
-			<div class="backdiv">
+		<form action="">
+			<div class="backdiv2">
 				<div id="date" contentEditable="true">
 					<span class="lighter">write here the most important events of the week:
 					</span>
 					<hr><hr><hr>
 				</div> <!-- date div -->
+				<div class="buttonsformulaire">
+					set here the subjects: &nbsp&nbsp&nbsp&nbsp&nbsp
+					<label for="checkbox"> General </label>
+					<input type="checkbox">
+					&nbsp&nbsp&nbsp&nbsp&nbsp
+					<label for="checkbox"> School </label>
+					<input type="checkbox">
+					&nbsp&nbsp&nbsp&nbsp&nbsp
+					<label for="checkbox"> Work </label>
+					<input type="checkbox">
+					&nbsp&nbsp&nbsp&nbsp&nbsp
+					<label for="checkbox"> Freetime </label>
+					<input type="checkbox">
+					&nbsp&nbsp&nbsp&nbsp&nbsp
+					<label for="checkbox"> Sport </label>
+					<input type="checkbox">
+				</div>
+				<div id="date" contentEditable="true">
+					<span class="lighter">note here:
+					</span>
+					<hr contentEditable="false"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr contentEditable="false">
+					<div class="pointerscopy" contentEditable="false">&nbsp&nbsp copy the pointers from here: &nbsp&nbsp 🟢 School &nbsp&nbsp&nbsp&nbsp&nbsp 🔵 Work &nbsp&nbsp&nbsp&nbsp&nbsp 🔴 Freetime &nbsp&nbsp&nbsp&nbsp&nbsp 🟡 Sport &nbsp&nbsp&nbsp&nbsp&nbsp
+					</div>
+				</div> <!-- date div -->
+				<a class="backbtn" href="agenda.html"> back to the agenda 🔙  </a>
+				<input type="submit" value="Submit">
+			</form> 
 			</div> <!-- backdiv div -->			
 	</main>
 </body>
