@@ -32,6 +32,7 @@ header {
 	background-color: var(--white);
 	height: 50px ;
 	display: flex;
+	flex-direction: row;
 } 
 
 .lighter {
@@ -40,6 +41,21 @@ header {
 
 
 main {display: flex;
+}
+
+.mustdobtn {
+	font-family: var(--lato);
+	color: var(--fontcolW);
+	font-weight: 900 ;
+	font-size:var(--fonsiz);
+	background-color: var(--starblue);
+	height: 24px;
+	width: 150px;
+	border-radius: 30px;
+	box-shadow: var(--onwhiteshad);
+	padding: 3px;
+	text-align: center;
+	margin-top: 10px;
 }
 
 #appointments:checked ~ #modal {
@@ -57,9 +73,11 @@ main {display: flex;
 	border-radius: 30px;
 	box-shadow: var(--onwhiteshad);
 	padding: 3px;
-	margin-left: 60px;
+	margin-left: 10px;
 	margin-top: 10px;
 }
+
+
 
 [name=sect1]:active, [name=sect1]:checked:active {		/* nice checked effect */
 	background-color: var(--maxbluepurp);
@@ -441,4 +459,20 @@ a.btn {
 #yellow {
 	font-size: 24px;
 	color: var(--entertcol);
+}
+
+.mustdobtn {
+	font-family: var(--lato);
+	color: var(--fontcolW);
+	font-weight: 900 ;
+	font-size:var(--fonsiz);
+	background-color: var(--starblue);
+	height: 24px;
+	width: 150px;
+	border-radius: 30px;
+	box-shadow: var(--onwhiteshad);
+	padding: 3px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 80px;
 }
