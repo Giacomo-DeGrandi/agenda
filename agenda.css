@@ -395,7 +395,7 @@ a.btn {
 	font-family: var(--lato);
 	color: var(--fontcolB);
 	font-weight: 900 ;
-	font-size:16px;
+	font-size:12px;
 	background-color: var(--white);
 	border-radius: 30px;
 	box-shadow: var(--onwhiteshad);
