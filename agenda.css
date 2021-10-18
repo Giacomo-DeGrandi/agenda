@@ -525,12 +525,11 @@ a.btn {
 
 }
 
-#submit {
+#submit, #submitS, #submitW, #submitF, #submitSp {
 	font-family: var(--lato);
 	color: var(--fontcolW);
 	font-weight: 900 ;
 	font-size:var(--fonsiz);
-	background-color: var(--starblue);
 	height: 24px;
 	width: 150px;
 	border-radius: 30px;
@@ -541,4 +540,26 @@ a.btn {
 	text-align: center;
 	margin-bottom: 10px;
 	margin-left:  50px;
+}
+
+#submit {
+	background-color: var(--starblue);
+}
+
+#submitS {
+	background-color: var(--schoolcol);
+}
+
+#submitW {
+	background-color: var(--workcol);
+}
+
+
+#submitF {
+	background-color: var(--sportcol);
+}
+
+#submitSp {
+	background-color: var(--entertcol);
+
 }
