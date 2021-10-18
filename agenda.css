@@ -351,7 +351,7 @@ a.btn {
 
 
 .calenmodal {
-	visibility: hidden;
+	display: none;
 }
 
 .calenmodal:target {
@@ -367,7 +367,6 @@ a.btn {
 	border: solid 0.02px lightgray;
 	display: flex;
 	flex-direction: column;
-	margin-right: 180px;
 
 }
 
@@ -390,3 +389,6 @@ a.btn {
 	text-align: left;
 }
 
+#pointers {
+	width: 1000px;
+}
