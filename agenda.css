@@ -496,7 +496,7 @@ a.btn {
 	font-size:var(--fonsiz);
 	background-color: var(--starblue);
 	height: 24px;
-	width: 250px;
+	width: 150px;
 	border-radius: 30px;
 	box-shadow: var(--onwhiteshad);
 	padding: 3px;
