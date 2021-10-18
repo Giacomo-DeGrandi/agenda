@@ -513,7 +513,7 @@ a.btn {
 	font-size:var(--fonsiz);
 	background-color: var(--starblue);
 	height: 24px;
-	width: 250px;
+	width: 300px;
 	border-radius: 30px;
 	box-shadow: var(--onwhiteshad);
 	padding: 3px;
@@ -523,4 +523,22 @@ a.btn {
 	text-align: center;
 	margin-bottom: 10px;
 
+}
+
+#submit {
+	font-family: var(--lato);
+	color: var(--fontcolW);
+	font-weight: 900 ;
+	font-size:var(--fonsiz);
+	background-color: var(--starblue);
+	height: 24px;
+	width: 150px;
+	border-radius: 30px;
+	box-shadow: var(--onwhiteshad);
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 60px;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-left:  50px;
 }
