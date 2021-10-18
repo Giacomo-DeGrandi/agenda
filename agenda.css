@@ -112,6 +112,22 @@ main {display: flex;
 	display: none;
 } 
 
+#settab1 {
+	margin-left: 150px;
+}
+
+#settab2 {
+	margin-left: 300px;
+}
+
+#settab3 {
+	margin-left: 450px;
+}
+
+#settab4 {
+	margin-left: 600px;
+}
+
 
 .todotext {
 		box-shadow: var(--onwhiteshad);
@@ -253,7 +269,7 @@ table {
 
 
 td:hover {
-	background-color: var(--midgray);
+	background-color: var(--lilac);
 	color: var(--fontcolW);
 	border-radius: 30px;
 }
